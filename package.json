@@ -1,13 +1,13 @@
 {
   "name": "mlb-map-glitch",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "private": true,
   "type": "module",
   "scripts": {
-    "start": "vite --host 0.0.0.0 --port $PORT",
+    "postinstall": "vite build",
+    "start": "vite preview --host 0.0.0.0 --port $PORT",
     "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview --host 0.0.0.0 --port $PORT"
+    "build": "vite build"
   },
   "dependencies": {
     "react": "^18.3.1",
