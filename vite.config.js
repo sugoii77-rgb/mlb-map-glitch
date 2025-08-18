@@ -3,6 +3,7 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
+  base: '/mlb-map-glitch/',
   root: '.',
   build: {
     outDir: 'dist',
